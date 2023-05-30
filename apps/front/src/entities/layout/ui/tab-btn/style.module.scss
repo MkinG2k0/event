@@ -1,0 +1,17 @@
+.wrap {
+	@apply select-none text-gray-500 cursor-pointer transition-colors h-14 w-14;
+
+	.badge {
+		@apply text-sm bg-blue-500 text-white font-semibold;
+		border-radius: 2rem;
+		min-width: 1.2rem;
+		min-height: 1.2rem;
+		position: absolute;
+		top: 4px;
+		right: -8px;
+		text-align: center;
+	}
+	&:hover {
+		@apply text-blue-400;
+	}
+}

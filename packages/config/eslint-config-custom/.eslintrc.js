@@ -15,7 +15,7 @@ module.exports = {
 	},
 
 	extends: [
-		'next',
+		// 'next',
 		'turbo',
 		'prettier',
 		'eslint:recommended',
