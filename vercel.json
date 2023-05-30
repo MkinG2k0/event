@@ -1,5 +1,3 @@
 {
-	"$schema": "https://turbo.build/schema.json",
-	"globalEnv": ["GITHUB_TOKEN"],
-	"globalDependencies": ["tsconfig.json"]
+	"$schema": "https://turbo.build/schema.json"
 }
