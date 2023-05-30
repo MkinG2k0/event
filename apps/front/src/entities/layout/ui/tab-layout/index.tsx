@@ -23,6 +23,7 @@ interface TabsProps {}
 export const TabsLayout: FC<TabsProps> = ({ children }) => {
 	const isMobile = useMediaQuery({ query: '(max-width: 640px)' })
 	const clWrap = isMobile ? 'large' : 'large'
+
 	return (
 		<div className={style.wrap}>
 			{/* <IonHeader>

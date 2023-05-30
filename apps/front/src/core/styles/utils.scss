@@ -1,7 +1,36 @@
 .row {
-	@apply flex gap-2 ;
+	@apply flex;
+}
+
+.row-2 {
+	@apply flex gap-2;
+}
+
+.row-4 {
+	@apply flex gap-4;
 }
 
 .col {
-	@apply flex flex-col gap-2 ;
+	@apply flex flex-col;
+}
+
+.col-2 {
+	@apply flex flex-col gap-2;
+}
+
+.col-4 {
+	@apply flex flex-col gap-4;
+}
+
+.mobile {
+	@screen sm {
+		display: none;
+	}
+}
+
+.pc {
+	display: none;
+	@screen sm {
+		display: inherit;
+	}
 }

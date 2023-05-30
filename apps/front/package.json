@@ -92,6 +92,7 @@
 		"prettier-config": "workspace:*",
 		"prisma": "^4.14.1",
 		"prisma-nestjs-graphql": "^18.0.2",
+		"react-icons": "^4.9.0",
 		"react-responsive": "^9.0.2",
 		"sass": "^1.62.1",
 		"start-server-and-test": "^2.0.0",

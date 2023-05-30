@@ -1,39 +1,17 @@
+import { Content } from '../content'
 import { EventHead } from '../head'
+import { RightBar } from '../right-bar'
 
 import style from './style.module.scss'
 
 const EventInfo: FC = () => {
 	return (
-		<div className={style.wrap}>
+		<div className={'flex flex-col h-full'}>
 			<EventHead />
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>asd</div>
-			<div>5</div>
-			<div>4</div>
-			<div>3</div>
-			<div>2</div>
-			<div>1</div>
+			<div className={'row flex-col flex-auto sm:flex-row'}>
+				<Content />
+				<RightBar />
+			</div>
 		</div>
 	)
 }
