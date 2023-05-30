@@ -6,7 +6,7 @@ import { Link } from 'atomic-router-react'
 const Events: FC = () => {
 	return (
 		<div className={style.wrap}>
-			Events
+			Events ok
 			<NavBtn
 				className={'flex-auto'}
 				classNameBtn={'w-full'}
