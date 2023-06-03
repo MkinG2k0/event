@@ -1,0 +1,92 @@
+$width: 3.5rem;
+
+.wrap {
+	// @apply flex flex-col flex-auto relative;
+	background: var(--ion-background-color);
+	color: var(--ion-text-color);
+	height: 100dvh;
+	display: grid;
+	grid-template-rows: 1fr $width;
+	grid-template-columns: $width 1fr;
+	grid-template-areas:
+		'L C'
+		'LB B';
+
+	.content {
+		@apply h-full;
+		overflow: overlay;
+
+		grid-row-start: L;
+		grid-column-start: L;
+		grid-row-end: C;
+		grid-column-end: C;
+
+		&::-webkit-scrollbar {
+			&-thumb {
+				border-radius: 0;
+			}
+		}
+
+		@screen sm {
+			grid-row-start: C;
+			grid-column-start: C;
+			grid-row-end: B;
+			grid-column-end: B;
+		}
+	}
+	.tabs {
+		@apply flex gap-2 py-0 px-4 justify-between items-center h-14 bottom-0 fixed w-full;
+
+		grid-row-start: L;
+		grid-column-start: L;
+		grid-row-end: LB;
+		grid-column-end: LB;
+
+		color: white;
+		background: var(--ion-toolbar-background);
+		border-top: #0d0d0d;
+		//
+		//@apply p-5;
+		.top {
+			@extend .button;
+		}
+		.center {
+			@apply flex-auto gap-0;
+			@extend .button;
+		}
+		.bottom {
+			@extend .button;
+		}
+
+		.hide {
+			display: none;
+		}
+
+		@screen sm {
+			@apply flex-col px-0 py-4 h-full  w-14;
+
+			grid-row-start: LB;
+			grid-column-start: LB;
+			grid-row-end: B;
+			grid-column-end: B;
+
+			.top {
+				@apply flex-col;
+			}
+			.center {
+				@apply flex-col gap-4;
+			}
+			.bottom {
+				@apply flex-col;
+			}
+			.hide {
+				display: flex;
+			}
+		}
+	}
+}
+
+.button {
+	@apply flex  justify-center items-center;
+}
+// --ion-safe-area-top
