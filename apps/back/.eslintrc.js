@@ -15,5 +15,6 @@ module.exports = {
   ignorePatterns: ['.eslintrc.js'],
   rules: {
     'new-cap': [0],
+    'no-unused-vars':[0]
   },
 };

@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { NavBtn } from 'shared'
 import { Button } from 'ui'
 
+import { NavBtn } from 'shared'
 import { authRoute } from '~/shared/config/routing/routes'
 
 const Main: FC = ({}) => {
