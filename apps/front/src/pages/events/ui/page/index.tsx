@@ -7,7 +7,7 @@ import { eventInfoRoute, eventsRoute } from '~/shared/config/routing'
 
 const Events: FC = () => {
 	return (
-		<div className={style.wrap}>
+		<div className={'col-2 p-2'}>
 			Events ok
 			<NavBtn
 				className={'flex-auto'}

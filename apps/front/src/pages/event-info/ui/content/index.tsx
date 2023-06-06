@@ -1,18 +1,19 @@
-import style from './style.module.scss'
 import { FC } from 'react'
+
+import style from './style.module.scss'
 
 interface ContentProps {}
 
 export const Content: FC<ContentProps> = ({}) => {
 	return (
-		<div className={'flex-auto col-2 border-b-2 md:border-r-2 border-divider-dark p-5'}>
+		<div className={'flex-auto col-2 max-sm:border-b-2 sm:border-r-2 border-divider-dark p-5'}>
 			<div className={''}>
-				<span className="text-lg">Описание</span>
-				<div className="text-md text-medium">Какой то текст</div>
+				<span className={'text-lg'}>Описание</span>
+				<div className={'text-md text-medium'}>Какой то текст</div>
 			</div>
 			<div className={''}>
-				<span className="text-lg">Что будем делать</span>
-				<div className="text-md text-medium">
+				<span className={'text-lg'}>Что будем делать</span>
+				<div className={'text-md text-medium'}>
 					<ul>
 						<li>- Что то</li>
 						<li>- Что то</li>
@@ -21,8 +22,8 @@ export const Content: FC<ContentProps> = ({}) => {
 				</div>
 			</div>
 			<div className={''}>
-				<span className="text-lg">Для кого ?</span>
-				<div className="text-md text-medium">
+				<span className={'text-lg'}>Для кого ?</span>
+				<div className={'text-md text-medium'}>
 					<ul>
 						<li>- Для тебя</li>
 						<li>- Друга</li>
